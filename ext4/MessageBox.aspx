@@ -26,6 +26,19 @@
             }, this, true);
         });
 
+
+        Ext.get('show').on('click', function () {
+            Ext.Msg.show({
+                title:'Ext.Msg.show()',
+                msg:'Ext.Msg.show(config object)',
+                buttons: Ext.Msg.YESNO,
+                animateTarget:'show'
+            });
+        });
+
+
+
+
     });
 </script>
 </asp:Content>
@@ -34,4 +47,5 @@
 <p id="confirm">Ext.Msg.confirm('title','msg',fn)</p>
 <p id="prompta">Ext.Msg.prompt('title','msg',fn)</p>
 <p id="promptb">Ext.Msg.prompt('title','msg',fn,this,true)</p>
+<p id="show">Ext.Msg.show(congif object)</p>
 </asp:Content>
