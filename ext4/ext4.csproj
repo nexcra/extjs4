@@ -2359,6 +2359,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Window.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -2396,6 +2397,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Window.aspx.cs">
+      <DependentUpon>Window.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Window.aspx.designer.cs">
+      <DependentUpon>Window.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

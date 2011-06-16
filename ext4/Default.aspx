@@ -9,4 +9,5 @@
     </h2>
     <p><a href="MessageBox.aspx">Ext.MessageBox</a></p>
     <p><a href="Panel.aspx">Ext.Panel</a></p>
+    <p><a href="Window.aspx">Ext.Window</a></p>
 </asp:Content>
