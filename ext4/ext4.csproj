@@ -2346,6 +2346,7 @@
     <Content Include="extjs\src\XTemplate.js" />
     <Content Include="extjs\src\ZIndexManager.js" />
     <Content Include="MessageBox.aspx" />
+    <Content Include="Panel.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -2380,6 +2381,13 @@
     </Compile>
     <Compile Include="MessageBox.aspx.designer.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

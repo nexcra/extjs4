@@ -86,26 +86,6 @@
                 closable: true
             });
         });
-
-
-        Ext.get('progressbar').on('click', function () {
-            var p = Ext.create('Ext.ProgressBar', {
-                renderTo: 'progressbar',
-                width: 300
-            });
-            p.wait({
-                interval: 500,
-                duration: 50000,
-                increment: 15,
-                text: 'Updating...',
-                scope: this,
-                fn: function () {
-                    p.updateText('Done!');
-                }
-            });
-
-        });
-
     });
 </script>
 </asp:Content>
@@ -117,5 +97,4 @@
 <p id="show">Ext.Msg.show(congif object)</p>
 <p id="progressa">progressText</p>
 <p id="progressb">progressText</p>
-<p id="progressbar">ProgressBar</p>
 </asp:Content>

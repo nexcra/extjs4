@@ -8,4 +8,5 @@
     Home
     </h2>
     <p><a href="MessageBox.aspx">Ext.MessageBox</a></p>
+    <p><a href="Panel.aspx">Ext.Panel</a></p>
 </asp:Content>
