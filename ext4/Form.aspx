@@ -8,7 +8,7 @@
             title: 'Sample Form',
             width: 350,
             fieldDefaults: {
-                msgTarget: 'side',
+                msgTarget: 'side',//错误提示类型
                 labelWidth: 75
             },
             defaultType: 'textfield',
@@ -39,9 +39,14 @@
             buttons:[{text:'Save'},{text:'Cancel'}],
             renderTo: 'form1'
         });
+
+
+
+
     });
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div id="form1"></div>
+<div id="form2"></div>
 </asp:Content>
