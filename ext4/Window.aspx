@@ -13,15 +13,17 @@
 
         Ext.create('Ext.Window', {
             title: 'Ext.Window',
+            x: 100,
+            y:280,
             height: 300,
             width: 400,
-            items: [{
-                xtype: 'tab',
-                title: 'Tab-a'
-            }, {
-                xtype:'tab',
-                title:'Tab-b'
-            }],
+            layout: 'fit',
+            items: {
+                xtype: 'grid',
+                border: false,
+                columns: [{ header: 'Hello'}],
+                store: Ext.create('Ext.data.ArrayStore', {})
+            },
             renderTo: 'window_b'
         }).show();
 
