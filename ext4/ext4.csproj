@@ -2345,6 +2345,7 @@
     <Content Include="extjs\src\window\Window.js" />
     <Content Include="extjs\src\XTemplate.js" />
     <Content Include="extjs\src\ZIndexManager.js" />
+    <Content Include="Form.aspx" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Panel.aspx" />
     <Content Include="Styles\Site.css" />
@@ -2375,6 +2376,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageBox.aspx.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
