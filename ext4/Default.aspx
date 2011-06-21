@@ -12,4 +12,5 @@
     <p><a href="Window.aspx">Ext.Window</a></p>
     <p><a href="Form.aspx">Ext.Form</a></p>
     <p><a href="Tree.aspx">Ext.Tree</a></p>
+    <p><a href="Tabs.aspx">Ext.Tabs</a></p>
 </asp:Content>

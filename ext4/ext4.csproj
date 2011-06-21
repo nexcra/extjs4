@@ -2353,6 +2353,7 @@
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Tabs.aspx" />
     <Content Include="Tree.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -2406,6 +2407,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs.aspx.cs">
+      <DependentUpon>Tabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tabs.aspx.designer.cs">
+      <DependentUpon>Tabs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tree.aspx.cs">
       <DependentUpon>Tree.aspx</DependentUpon>
