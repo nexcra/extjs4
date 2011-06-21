@@ -78,22 +78,22 @@
             },
             root: {
                 title: 'Ext.Tree',
-                id: 'src',
+                id: 'id',
                 expanded: true
             },
             folderSort: true,
             sorters: [{
                 property: 'text',
-                direction: 'ASC'
+                direction: 'asc'
             }]
         });
 
-        Ext.create('Ext.Panel', {
+        var tree2 = Ext.create('Ext.tree.Panel', {
             store: store2,
             viewConfig: {
                 plugins: { ptype: 'treeviewdragdrop' }
             },
-            renderTo: 'tree2',
+            renderTo: 'tree3',
             height: 300,
             width: 250,
             title: 'Files',
@@ -103,12 +103,12 @@
                 items: [{
                     text: 'Expand All',
                     handler: function () {
-                        tree3.expandAll();
+                        tree2.expandAll();
                     }
                 }, {
                     text: 'Collapse All',
                     handler: function () {
-                        tree3.collaspeAll();
+                        tree2.collaspeAll();
                     }
                 }]
             }]
