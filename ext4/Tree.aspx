@@ -78,7 +78,7 @@
             },
             root: {
                 title: 'Ext.Tree',
-                id: 'id',
+                id: '0',
                 expanded: true
             },
             folderSort: true,
@@ -108,11 +108,15 @@
                 }, {
                     text: 'Collapse All',
                     handler: function () {
-                        tree2.collaspeAll();
+                        tree2.collapseAll();
                     }
                 }]
             }]
         });
+
+        tree2.on('itemclick', function (view, record, item, index, e) {
+            Ext.Msg.alert('Status', '您点击的ID是:' + record.raw.id + ",您点击的文字是:" + record.raw.text);
+        })
 
     });
 </script>

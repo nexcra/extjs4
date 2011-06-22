@@ -32,16 +32,7 @@ namespace ext4
             string node = context.Request.QueryString["node"];
             string con = ConfigurationManager.AppSettings["App"].ToString();
             SqlConnection conn = new SqlConnection(con);
-            string sql=null;
-            if (string.IsNullOrEmpty(node) || node == "id")
-            {
-                sql = "SELECT * FROM easyuiTree";
-            }
-            else
-            {
-                sql = "SELECT * FROM easyuiTree WHERE Pid=" + node + "";
-            }
-            SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM easyuiTree WHERE Pid=" + node + "", conn);
             conn.Open();
             DataTable dt = new DataTable();
             da.Fill(dt);
