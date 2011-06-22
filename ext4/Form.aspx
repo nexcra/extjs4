@@ -239,7 +239,7 @@
                 layout: 'column',
                 border: false,
                 items: [{
-                    columnWidth: 5,
+                    columnWidth: .5,
                     border: false,
                     layout: 'anchor',
                     defaultType: 'textfield',
@@ -253,7 +253,7 @@
                         anchor: '95%'
                     }]
                 }, {
-                    columnWidth: 5,
+                    columnWidth: .5,
                     border: false,
                     layout: 'anchor',
                     defaultType: 'textfield',
@@ -265,7 +265,7 @@
                         fieldLabel: 'Email',
                         name: 'mail',
                         vtype: 'email',
-                        anchor: '90%'
+                        anchor: '95%'
                     }]
                 }]
             }, {
