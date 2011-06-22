@@ -13,4 +13,5 @@
     <p><a href="Form.aspx">Ext.Form</a></p>
     <p><a href="Tree.aspx">Ext.Tree</a></p>
     <p><a href="Tabs.aspx">Ext.Tabs</a></p>
+    <p><a href="ComboBox.aspx">Ext.ComboBox</a></p>
 </asp:Content>

@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="ComboBox.aspx" />
     <Content Include="extjs\bootstrap.js" />
     <Content Include="extjs\examples\app\feed-viewer\app.js" />
     <Content Include="extjs\examples\app\feed-viewer\app\controller\Articles.js" />
@@ -2371,6 +2372,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBox.aspx.cs">
+      <DependentUpon>ComboBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComboBox.aspx.designer.cs">
+      <DependentUpon>ComboBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
