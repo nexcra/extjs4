@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CheckboxRadio.aspx" />
     <Content Include="ComboBox.aspx" />
     <Content Include="extjs\bootstrap.js" />
     <Content Include="extjs\examples\app\feed-viewer\app.js" />
@@ -2347,6 +2348,7 @@
     <Content Include="extjs\src\XTemplate.js" />
     <Content Include="extjs\src\ZIndexManager.js" />
     <Content Include="Form.aspx" />
+    <Content Include="FormFieldTypes.aspx" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Panel.aspx" />
     <Content Include="Styles\Site.css" />
@@ -2365,6 +2367,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckboxRadio.aspx.cs">
+      <DependentUpon>CheckboxRadio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckboxRadio.aspx.designer.cs">
+      <DependentUpon>CheckboxRadio.aspx</DependentUpon>
     </Compile>
     <Compile Include="ComboBox.aspx.cs">
       <DependentUpon>ComboBox.aspx</DependentUpon>
@@ -2386,6 +2395,13 @@
     </Compile>
     <Compile Include="Form.aspx.designer.cs">
       <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFieldTypes.aspx.cs">
+      <DependentUpon>FormFieldTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFieldTypes.aspx.designer.cs">
+      <DependentUpon>FormFieldTypes.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageBox.aspx.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
