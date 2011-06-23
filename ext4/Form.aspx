@@ -331,27 +331,6 @@
         });
 
 
-        var cs = Ext.widget('panel', {
-            renderTo: 'contact-us',
-            title: 'Welcom!',
-            width: 500,
-            bodyPadding: 20,
-            items: [{
-                xtype: 'component',
-                html: 'Thank you for visiting our site! We welcome your feedback; please click the button below to send us a message. We will respond to your inquiry as quickly as possible.',
-                style: 'margin-bottom:20px;'
-            }, {
-                xtype: 'container',
-                style: 'text-align:center',
-                items: [{
-                    xtype: 'button',
-                    cls: 'contactBtn',
-                    scale: 'large',
-                    text: 'Contact Us',
-                    handler: showContactForm
-                }]
-            }]
-        });
 
         var win;
         function showContactForm() {
@@ -421,9 +400,9 @@
                             this.up('window').hide();
                         }
                     }, {
-                        text: 'Save',
+                        text: 'Send',
                         handler: function () {
-                            if (this.up('form').getForm().IsValid()) {
+                            if (this.up('form').getForm().isValid()) {// 注意大小写
                                 //this.up('form').getForm().submit();
                                 this.up('form').getForm().reset();
                                 this.up('window').hide();
@@ -448,6 +427,29 @@
             }
             win.show();
         }
+        
+        var cs = Ext.widget('panel', {
+            renderTo: 'contact-us',
+            title: 'Welcome!',
+            width: 500,
+            bodyPadding: 20,
+            items: [{
+                xtype: 'component',
+                html: 'Thank you for visiting our site! We welcome your feedback; please click the button below to send us a message. We will respond to your inquiry as quickly as possible.',
+                style: 'margin-bottom:20px;'
+            }, {
+                xtype: 'container',
+                style: 'text-align:center',
+                items: [{
+                    xtype: 'button',
+                    cls: 'contactBtn',
+                    scale: 'large',
+                    text: 'Contact Us',
+                    handler: showContactForm
+                }]
+            }]
+        });
+        
 
     });
 </script>
