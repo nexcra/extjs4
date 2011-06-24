@@ -2347,6 +2347,7 @@
     <Content Include="extjs\src\window\Window.js" />
     <Content Include="extjs\src\XTemplate.js" />
     <Content Include="extjs\src\ZIndexManager.js" />
+    <Content Include="FileUploadField.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="FormFieldTypes.aspx" />
     <Content Include="MessageBox.aspx" />
@@ -2388,6 +2389,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileUploadField.aspx.cs">
+      <DependentUpon>FileUploadField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileUploadField.aspx.designer.cs">
+      <DependentUpon>FileUploadField.aspx</DependentUpon>
     </Compile>
     <Compile Include="Form.aspx.cs">
       <DependentUpon>Form.aspx</DependentUpon>
