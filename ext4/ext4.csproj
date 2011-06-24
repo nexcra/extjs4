@@ -2351,6 +2351,8 @@
     <Content Include="Form.aspx" />
     <Content Include="FormFieldTypes.aspx" />
     <Content Include="MessageBox.aspx" />
+    <Content Include="Multiselect.aspx" />
+    <Content Include="NumberFieldExample.aspx" />
     <Content Include="Panel.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -2417,6 +2419,20 @@
     </Compile>
     <Compile Include="MessageBox.aspx.designer.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Multiselect.aspx.cs">
+      <DependentUpon>Multiselect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Multiselect.aspx.designer.cs">
+      <DependentUpon>Multiselect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NumberFieldExample.aspx.cs">
+      <DependentUpon>NumberFieldExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NumberFieldExample.aspx.designer.cs">
+      <DependentUpon>NumberFieldExample.aspx</DependentUpon>
     </Compile>
     <Compile Include="Panel.aspx.cs">
       <DependentUpon>Panel.aspx</DependentUpon>

@@ -17,5 +17,6 @@
     <p><a href="FormFieldTypes.aspx">Form Field Types</a></p>
     <p><a href="CheckboxRadio.aspx">Checkbox / Radio Groups</a></p>
     <p><a href="FileUploadField.aspx">File Upload Field</a></p>
-    
+    <p><a href="NumberFieldExample.aspx">Number Field Example</a></p>
+    <p><a href="Multiselect.aspx">MultiSelect & ItemSelector</a></p>
 </asp:Content>
