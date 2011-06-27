@@ -2354,6 +2354,8 @@
     <Content Include="Multiselect.aspx" />
     <Content Include="NumberFieldExample.aspx" />
     <Content Include="Panel.aspx" />
+    <Content Include="RegistrationForm.aspx" />
+    <Content Include="ShoppingCartCheckout.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -2442,6 +2444,20 @@
       <DependentUpon>Panel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationForm.aspx.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.aspx.designer.cs">
+      <DependentUpon>RegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartCheckout.aspx.cs">
+      <DependentUpon>ShoppingCartCheckout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCartCheckout.aspx.designer.cs">
+      <DependentUpon>ShoppingCartCheckout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

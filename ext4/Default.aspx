@@ -19,4 +19,6 @@
     <p><a href="FileUploadField.aspx">File Upload Field</a></p>
     <p><a href="NumberFieldExample.aspx">Number Field Example</a></p>
     <p><a href="Multiselect.aspx">MultiSelect & ItemSelector</a></p>
+    <p><a href="RegistrationForm.aspx">Registration Form</a></p> 
+    <p><a href="ShoppingCartCheckout.aspx">Shopping Cart Checkout</a></p>
 </asp:Content>
