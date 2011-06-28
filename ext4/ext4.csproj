@@ -2347,15 +2347,19 @@
     <Content Include="extjs\src\window\Window.js" />
     <Content Include="extjs\src\XTemplate.js" />
     <Content Include="extjs\src\ZIndexManager.js" />
+    <Content Include="FieldContainers.aspx" />
     <Content Include="FileUploadField.aspx" />
     <Content Include="Form.aspx" />
     <Content Include="FormFieldTypes.aspx" />
+    <Content Include="FormswithhBoxlayout.aspx" />
+    <Content Include="FormswithvBoxlayout.aspx" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Multiselect.aspx" />
     <Content Include="NumberFieldExample.aspx" />
     <Content Include="Panel.aspx" />
     <Content Include="RegistrationForm.aspx" />
     <Content Include="ShoppingCartCheckout.aspx" />
+    <Content Include="SliderField.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -2394,6 +2398,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FieldContainers.aspx.cs">
+      <DependentUpon>FieldContainers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FieldContainers.aspx.designer.cs">
+      <DependentUpon>FieldContainers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FileUploadField.aspx.cs">
       <DependentUpon>FileUploadField.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2414,6 +2425,20 @@
     </Compile>
     <Compile Include="FormFieldTypes.aspx.designer.cs">
       <DependentUpon>FormFieldTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormswithhBoxlayout.aspx.cs">
+      <DependentUpon>FormswithhBoxlayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormswithhBoxlayout.aspx.designer.cs">
+      <DependentUpon>FormswithhBoxlayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormswithvBoxlayout.aspx.cs">
+      <DependentUpon>FormswithvBoxlayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormswithvBoxlayout.aspx.designer.cs">
+      <DependentUpon>FormswithvBoxlayout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageBox.aspx.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
@@ -2464,6 +2489,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SliderField.aspx.cs">
+      <DependentUpon>SliderField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SliderField.aspx.designer.cs">
+      <DependentUpon>SliderField.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tabs.aspx.cs">
       <DependentUpon>Tabs.aspx</DependentUpon>
