@@ -2353,6 +2353,7 @@
     <Content Include="FormFieldTypes.aspx" />
     <Content Include="FormswithhBoxlayout.aspx" />
     <Content Include="FormswithvBoxlayout.aspx" />
+    <Content Include="Formwithabsolutelayout.aspx" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Multiselect.aspx" />
     <Content Include="NumberFieldExample.aspx" />
@@ -2439,6 +2440,13 @@
     </Compile>
     <Compile Include="FormswithvBoxlayout.aspx.designer.cs">
       <DependentUpon>FormswithvBoxlayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formwithabsolutelayout.aspx.cs">
+      <DependentUpon>Formwithabsolutelayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formwithabsolutelayout.aspx.designer.cs">
+      <DependentUpon>Formwithabsolutelayout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageBox.aspx.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>
