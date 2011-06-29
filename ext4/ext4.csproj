@@ -53,6 +53,7 @@
     <Content Include="About.aspx" />
     <Content Include="CheckboxRadio.aspx" />
     <Content Include="ComboBox.aspx" />
+    <Content Include="CustomformField.aspx" />
     <Content Include="extjs\bootstrap.js" />
     <Content Include="extjs\examples\app\feed-viewer\app.js" />
     <Content Include="extjs\examples\app\feed-viewer\app\controller\Articles.js" />
@@ -2391,6 +2392,13 @@
     </Compile>
     <Compile Include="ComboBox.aspx.designer.cs">
       <DependentUpon>ComboBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomformField.aspx.cs">
+      <DependentUpon>CustomformField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomformField.aspx.designer.cs">
+      <DependentUpon>CustomformField.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
