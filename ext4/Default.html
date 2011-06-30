@@ -7,6 +7,7 @@ p{margin:5px;}
 .settings {background-image:url(extjs/examples/shared/icons/fam/folder_wrench.png);}
 .nav {background-image:url(extjs/examples/shared/icons/fam/folder_go.png);}
 .info {background-image:url(extjs/examples/shared/icons/fam/information.png);}
+.pico {text-indent:18px;background:url(extjs/examples/shared/icons/fam/grid.png) no-repeat 1px -1px;cursor:pointer}
 </style>
 <script src="extjs/bootstrap.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -26,6 +27,10 @@ p{margin:5px;}
                         html: '<p></p>'
                     }
                 }), {
+                    region: 'south',
+                    height: 30,
+                    margins: '0 5 5 5'
+                }, {
                     region: 'west',
                     stateId: 'navigation-panel',
                     id: 'west-panel', // see Ext.getCmp() below
@@ -41,21 +46,21 @@ p{margin:5px;}
                     items: [{
                         contentEl: 'west',
                         title: '栏目管理',
-                        iconCls: 'nav'
+                        iconCls: 'nav',
+                        fn: Ext.get('west').on('click', function () {
+                        })
                     }, {
                         title: '系统设置',
-                        html: '',
                         iconCls: 'settings'
                     }, {
                         title: 'FAQ',
-                        html: '',
                         iconCls: 'info'
                     }]
                 },
                 Ext.create('Ext.tab.Panel', {
                     region: 'center',
                     deferredRender: false,
-					margins: '0 5 5 0',
+                    margins: '0 5 5 0',
                     activeTab: 0,
                     items: [{
                         contentEl: 'center2',
@@ -65,22 +70,26 @@ p{margin:5px;}
                 })]
         });
 
-		Ext.get("hideit").on('click', function () {
-			var w = Ext.getCmp('west-panel');
-			w.collapsed ? w.expand() : w.collapse();
-		});
+        Ext.get("hideit").on('click', function () {
+            var w = Ext.getCmp('west-panel');
+            w.collapsed ? w.expand() : w.collapse();
+        });
+
+
+
     });
 </script>
 </head>
 <body>
     <div id="west" class="x-hide-display">
-        <p id="show">作品秀</p>
-        <p id="news">信息摘录</p>
-        <p id="faq">FAQ</p>
-        <p id="about">关于我们</p>
+        <p id="show" class="pico">作品秀</p>
+        <p id="news" class="pico">信息摘录</p>
+        <p id="faq" class="pico">FAQ</p>
+        <p id="about" class="pico">关于我们</p>
     </div>
     <div id="center2" class="x-hide-display">
         <a id="hideit" href="#"></a>
+
     </div>
 </body>
 </html>
