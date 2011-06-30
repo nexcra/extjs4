@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nav>
+  <item name="Home" tip="主页"/>
+  <item name="Show" tip="作品秀"/>
+  <item name="News" tip="信息摘录"/>
+  <item name="FAQ" tip="FAQ"/>
+  <item name="About" tip="关于我们"/>
+</nav>

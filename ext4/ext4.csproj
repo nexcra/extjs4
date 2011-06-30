@@ -53,7 +53,10 @@
     <Content Include="About.aspx" />
     <Content Include="CheckboxRadio.aspx" />
     <Content Include="ComboBox.aspx" />
+    <Content Include="Config\c_navigation.xml" />
     <Content Include="CustomformField.aspx" />
+    <Content Include="Data\faq.xml" />
+    <Content Include="Data\news.xml" />
     <Content Include="Default.html" />
     <Content Include="extjs\bootstrap.js" />
     <Content Include="extjs\examples\app\feed-viewer\app.js" />
@@ -2541,8 +2544,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
-    <Folder Include="App_Data\" />
+    <Folder Include="Data\faq\" />
+    <Folder Include="Data\file\" />
+    <Folder Include="Data\news\" />
     <Folder Include="extjs\js\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
