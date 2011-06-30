@@ -2359,6 +2359,7 @@
     <Content Include="FormswithhBoxlayout.aspx" />
     <Content Include="FormswithvBoxlayout.aspx" />
     <Content Include="Formwithabsolutelayout.aspx" />
+    <Content Include="Index.html" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Multiselect.aspx" />
     <Content Include="NumberFieldExample.aspx" />
