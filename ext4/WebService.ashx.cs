@@ -51,6 +51,8 @@ namespace ext4
             }
             json = json.Substring(0, json.Length - 1);
             json += "]";
+            conn.Close();
+            conn.Dispose();
             return json;
         }
 
@@ -62,6 +64,8 @@ namespace ext4
             conn.Open();
             DataTable dt = new DataTable();
             ds.Fill(dt);
+            conn.Close();
+            conn.Dispose();
             return dt.Rows.Count > 0;
         }
 
