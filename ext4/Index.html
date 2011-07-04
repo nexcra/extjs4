@@ -8,6 +8,7 @@
     .nav {background-image:url(extjs/examples/shared/icons/fam/folder_go.png);}
     .info {background-image:url(extjs/examples/shared/icons/fam/information.png);}
     .pico {text-indent:18px;background:url(extjs/examples/shared/icons/fam/grid.png) no-repeat;cursor:pointer}
+	.header {font-size:14px;height:28px;line-height:28px;text-indent:8px;}
     </style>
     <script src="extjs/bootstrap.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -49,7 +50,9 @@
 					margin:'1',
 					bodyStyle:{
 						background:'#DFE8F6'
-					}
+					},
+					html:'当前位置：<i id=current></i>',
+					cls:'header'
 				},{
 					region:'west',
 					id:'west',
