@@ -78,7 +78,25 @@ Ext.onReady(function(){
 	});
 	
 	
-	
+	Ext.create('Ext.Panel',{
+		title:'Right-aligned StatusBar',
+		renderTo:'div2',
+		width:500,
+		height:100,
+		bodyStyle:'padding:10px;',
+		items:[{
+			xtype:'button',
+			id:'b',
+			text:'Do Loading',
+			handler:Ext.Function.pass(loadFn,['basic-button','basic-statusbar'])
+		}],
+		bbar:Ext.create('Ext.ux.StatusBar',{
+			id:'v',
+			defaultText: 'Default status',
+			statusAlign: 'right',
+			items:[{text:'A Button'},'-', 'Plain Text', ' ', ' ']
+		})
+	});
 	
 	
 	
@@ -97,5 +115,5 @@ Ext.onReady(function(){
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div id="div1"/>
+<div id="div1"/><div id="div2"/>
 </asp:Content>
