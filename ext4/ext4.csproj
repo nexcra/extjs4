@@ -2370,6 +2370,7 @@
     <Content Include="RegistrationForm.aspx" />
     <Content Include="ShoppingCartCheckout.aspx" />
     <Content Include="SliderField.aspx" />
+    <Content Include="StatusBar.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
@@ -2520,6 +2521,13 @@
     </Compile>
     <Compile Include="SliderField.aspx.designer.cs">
       <DependentUpon>SliderField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBar.aspx.cs">
+      <DependentUpon>StatusBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatusBar.aspx.designer.cs">
+      <DependentUpon>StatusBar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tabs.aspx.cs">
       <DependentUpon>Tabs.aspx</DependentUpon>
