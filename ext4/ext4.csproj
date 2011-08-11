@@ -13,6 +13,7 @@
     <RootNamespace>ext4</RootNamespace>
     <AssemblyName>ext4</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2362,6 +2363,7 @@
     <Content Include="FormswithvBoxlayout.aspx" />
     <Content Include="Formwithabsolutelayout.aspx" />
     <Content Include="Index.html" />
+    <Content Include="Layout.htm" />
     <Content Include="Layout.html" />
     <Content Include="MessageBox.aspx" />
     <Content Include="Multiselect.aspx" />
