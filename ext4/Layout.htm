@@ -3,7 +3,47 @@
 <head>
 <meta charset="utf-8">
 <title>Layout</title>
-
+    <script src="extjs/bootstrap.js" type="text/javascript"></script>
+    <script src="extjs/ext-all-debug.js" type="text/javascript"></script>
+    <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            Ext.create('Ext.container.Viewport', {
+                layout: 'border',
+                renderTo: Ext.getBody(),
+                items: [{
+                    region: 'north',
+                    html: '<h1 class="x-panel-header">上海市胸科医院教科管理系统</h1>',
+                    autoHeight: true,
+                    border: false,
+                    margins: '0 0 5 0'
+                }, {
+                    region: 'west',
+                    collapsible: true,
+                    margins: '0 0 5 5',
+                    title: 'Navigation',
+                    split:true,
+                    width: 200
+                }, {
+                    region:'south',
+                    height: 20,
+                    margins: '0 5 5 5',
+                    html: '<center id="foot">Copyright 2011 &copy; 上海市胸科医院</center>'
+                }, {
+                    region: 'center',
+                    margins: '0 5 5 0',
+                    xtype: 'tabpanel',
+                    activeTab: 0,
+                    items: {
+                        title: 'Default Tab'
+                    }
+                }]
+            });
+        });
+    </script>
+    <style type="text/css">
+        #foot{height:15px;line-height:17px;}
+    </style>
 </head>
 
 <body>
