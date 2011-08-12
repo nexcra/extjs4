@@ -13,19 +13,45 @@
                 renderTo: Ext.getBody(),
                 items: [{
                     region: 'north',
-                    html: '<h1 class="x-panel-header">上海市胸科医院教科管理系统</h1>',
+                    layout: 'anchor',
+                    anchor:'100%',
                     autoHeight: true,
                     border: false,
-                    margins: '0 0 5 0'
+                    margins: '0 5 1 5',
+                    items: new Ext.create('Ext.toolbar.Toolbar', {
+                        height: 30,
+                        items: [{
+                            xtype: 'button',
+                            text: '设备管理'
+                        }, {
+                            xtype: 'button',
+                            text: '系统管理'
+                        },
+                        '->',
+                        {
+                            xtype:'label',
+                            width:30,
+                            text:'欢迎'
+                        },
+                        {
+                            xtype: 'label',
+                            width:60,
+                            text:'超级管理员'
+                        },
+                        {
+                            xtype: 'label',
+                            width:140,
+                            text:new Date().toLocaleDateString()
+                        }]
+                    })
                 }, {
                     region: 'west',
                     collapsible: true,
                     margins: '0 0 5 5',
-                    title: 'Navigation',
-                    split:true,
+                    split: true,
                     width: 200
                 }, {
-                    region:'south',
+                    region: 'south',
                     height: 20,
                     margins: '0 5 5 5',
                     html: '<center id="foot">Copyright 2011 &copy; 上海市胸科医院</center>'
@@ -35,7 +61,7 @@
                     xtype: 'tabpanel',
                     activeTab: 0,
                     items: {
-                        title: 'Default Tab'
+                        title: '我的桌面'
                     }
                 }]
             });
