@@ -8,52 +8,94 @@
     <link href="extjs/resources/css/ext-all.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         Ext.onReady(function () {
+            var detailEl;
+            var sysstore = Ext.create('Ext.data.TreeStore', {
+                root: {
+                    expanded: true
+                },
+                proxy: {
+                    type: 'ajax',
+                    url: 'data/tree-json.aspx'
+                }
+            });
+
+            var treesys = Ext.create('Ext.tree.Panel', {
+                store: sysstore,
+                rootVisible: false,
+                region: 'west',
+                id: 'west',
+                collapsible: true,
+                margins: '0 0 5 5',
+                split: true,
+                width: 200,
+                store: sysstore
+            });
+
             Ext.create('Ext.container.Viewport', {
                 layout: 'border',
                 renderTo: Ext.getBody(),
                 items: [{
                     region: 'north',
                     layout: 'anchor',
-                    anchor:'100%',
+                    anchor: '100%',
                     autoHeight: true,
                     border: false,
-                    margins: '0 5 1 5',                                    
+                    margins: '0 5 1 5',
                     items: new Ext.create('Ext.toolbar.Toolbar', {
                         height: 30,
                         items: [{
                             xtype: 'button',
-                            iconCls: 'user',
-                            text: '设备管理'
+                            iconCls: 'sbm',
+                            text: '设备管理',
+                            handler: function () {
+                                var bd = Ext.getCmp('west').body;
+                                bd.update('');
+                            }
                         }, '-',
                         {
                             xtype: 'button',
-                            iconCls:'menu',
-                            text: '系统管理'
+                            iconCls: 'menu',
+                            text: '系统管理',
+                            handler: function () {
+                                detailEl = null;
+                                if (!detailEl) {
+                                    var bd = Ext.getCmp('west').body;
+                                    bd.update('').setStyle('background', '#F5F5F5');
+                                    detailEl = bd.createChild();
+                                }
+                                detailEl.hide().update(Ext.getDom('sys').innerHTML).slideIn('l', { stopAnimation: true, duration: 200 });
+                            }
+                        }, '-', {
+                            xtype: 'button',
+                            iconCls: '',
+                            text: '退出',
+                            handler: function () {
+                                Ext.Msg.confirm('提示', '是否要退出系统!', function (e) {
+                                    if (e == 'yes') {
+
+                                    }
+                                });
+                            }
                         },
                         '->',
                         {
-                            xtype:'label',
-                            width:30,
-                            text:'欢迎'
+                            xtype: 'label',
+                            width: 30,
+                            text: '欢迎'
                         },
                         {
                             xtype: 'label',
-                            width:60,
-                            text:'超级管理员'
+                            width: 60,
+                            cls: 'user',
+                            text: '超级管理员'
                         },
                         {
                             xtype: 'label',
-                            width:140,
-                            text:new Date().toLocaleDateString()
+                            width: 140,
+                            text: new Date().toLocaleDateString()
                         }]
                     })
-                }, {
-                    region: 'west',
-                    collapsible: true,
-                    margins: '0 0 5 5',
-                    split: true,
-                    width: 200
-                }, {
+                }, treesys, {
                     region: 'south',
                     height: 20,
                     margins: '0 5 5 5',
@@ -72,11 +114,19 @@
     </script>
     <style type="text/css">
         #foot{height:15px;line-height:17px;}
-        .user {background-image:url(extjs/examples/shared/icons/fam/folder_wrench.png) !important}
+        .sbm {background-image:url(extjs/examples/shared/icons/fam/folder_wrench.png) !important}
         .menu {background-image:url(extjs/examples/shared/icons/fam/cog_edit.png) !important}
     </style>
 </head>
 
 <body>
+<div id="sbm" class="x-hide-display">
+<ul>
+<li>设备综合查询</li>
+<li>设备综合查询</li>
+</ul>
+</div>
+<div id="sys" class="x-hide-display">
+</div>
 </body>
 </html>

@@ -58,6 +58,7 @@
     <Content Include="CustomformField.aspx" />
     <Content Include="Data\faq.xml" />
     <Content Include="Data\news.xml" />
+    <Content Include="Data\tree-json.aspx" />
     <Content Include="Default.html" />
     <Content Include="extjs\bootstrap.js" />
     <Content Include="extjs\examples\app\feed-viewer\app.js" />
@@ -2728,7 +2729,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>9557</DevelopmentServerPort>
+          <DevelopmentServerPort>5420</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
