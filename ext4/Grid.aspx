@@ -4,26 +4,19 @@
     Ext.onReady(function () {
         Ext.define('model', {
             extend: 'Ext.data.Model',
-            fields: [{
-                name: 'CompanyName', type: 'string'
-            }, {
-                name: 'ContactName', type: 'string'
-            }, {
-                name: 'ContactTitle', type: 'string'
-            }, {
-                name: 'Address', type: 'string'
-            }, {
-                name: 'Phone', type: 'string'
-            }, {
-                name: 'Fax', type: 'string'
-            }]
+            fields: [{ name: 'CompanyName', type: 'string' },
+                     { name: 'ContactName', type: 'string' },
+                     { name: 'ContactTitle', type: 'string' },
+                     { name: 'Address', type: 'string' },
+                     { name: 'Phone', type: 'string' },
+                     { name: 'Fax', type: 'string'}]
         });
 
         var store = Ext.create('Ext.data.Store', {
             model: 'model',
             proxy: {
                 type: 'ajax',
-                url: 'webservice.ashx?action=customer',
+                url: 'WebService.ashx?action=customer',
                 render: {
                     type:'json',
                     root: 'topics',
