@@ -2363,6 +2363,7 @@
     <Content Include="FormswithhBoxlayout.aspx" />
     <Content Include="FormswithvBoxlayout.aspx" />
     <Content Include="Formwithabsolutelayout.aspx" />
+    <Content Include="Grid.aspx" />
     <Content Include="Index.html" />
     <Content Include="Layout.htm" />
     <Content Include="Layout.html" />
@@ -2467,6 +2468,13 @@
     </Compile>
     <Compile Include="Formwithabsolutelayout.aspx.designer.cs">
       <DependentUpon>Formwithabsolutelayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.aspx.cs">
+      <DependentUpon>Grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grid.aspx.designer.cs">
+      <DependentUpon>Grid.aspx</DependentUpon>
     </Compile>
     <Compile Include="MessageBox.aspx.cs">
       <DependentUpon>MessageBox.aspx</DependentUpon>

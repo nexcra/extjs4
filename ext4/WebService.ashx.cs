@@ -22,6 +22,9 @@ namespace ext4
                 case "tree":
                     json = jsonTree(context);
                     break;
+                case "customer":
+                    json = customer(context);
+                    break;
             }
             context.Response.Write(json);
         }
@@ -68,6 +71,31 @@ namespace ext4
             conn.Dispose();
             return dt.Rows.Count > 0;
         }
+
+        public string customer(HttpContext context)
+        {
+            string json = string.Empty;
+            string con = ConfigurationManager.AppSettings["Northwind"].ToString();
+            SqlConnection conn = new SqlConnection(con);
+            SqlDataAdapter ds = new SqlDataAdapter("SELECT * FROM Customer", conn);
+            conn.Open();
+            DataTable dt = new DataTable();
+            ds.Fill(dt);
+            json += "{'totalCount:'500',topics:[";
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                json += "{";
+                json += "'CompanyName':'" + dt.Rows[i]["CompanyName"] + "','ContactName':'" + dt.Rows[i]["ContactName"] + "','ContactTitle':'" + dt.Rows[i]["ContactName"] + "','Address':'" + dt.Rows[i]["Address"] + "','Phone':'" + dt.Rows[i]["Phone"] + "','Fax','" + dt.Rows[i]["Fax"] + "'";
+                json += "},";
+            }
+            json = json.Substring(0, json.Length - 1);
+            json += json + "]}";
+            conn.Close();
+            conn.Dispose();
+            
+            return json;
+        }
+
 
         public bool IsReusable
         {
